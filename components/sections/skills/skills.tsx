@@ -241,7 +241,7 @@ const skillsData = {
 const SkillCard = ({ skill }: { skill: { name: string; icon: React.ReactNode } }) => {
 	return (
 		<motion.div
-			className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/5 text-white border border-white/10 backdrop-blur-lg cursor-pointer shadow-lg"
+			className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/5 text-primary border border-white/10 backdrop-blur-lg cursor-pointer shadow-lg"
 			whileHover={{
 				y: -4,
 				scale: 1.05,
@@ -262,10 +262,10 @@ export function Skills() {
 				<StaggerContainer>
 					{/* Section Header */}
 					<motion.div className="text-center mb-20" variants={modernVariants.fadeInUp}>
-						<motion.h2 className="text-4xl md:text-6xl font-bold mb-6 text-white">
+						<motion.h2 className="text-4xl md:text-6xl font-display font-bold mb-6 text-primary">
 							Skills & Technologies
 						</motion.h2>
-						<motion.p className="text-lg text-white/60 max-w-2xl mx-auto">
+						<motion.p className="text-lg text-secondary max-w-2xl mx-auto">
 							A comprehensive toolkit for building modern, scalable, and performant web applications with
 							focus on user experience and code quality.
 						</motion.p>
@@ -282,8 +282,8 @@ export function Skills() {
 									transition={{ delay: categoryIndex * 0.1 }}
 								>
 									<div className="text-4xl mb-3">{data.icon}</div>
-									<h3 className="text-xl font-semibold text-white mb-2">{data.title}</h3>
-									<p className="text-sm text-white/60">{data.description}</p>
+									<h3 className="text-xl font-semibold text-primary mb-2">{data.title}</h3>
+									<p className="text-sm text-secondary">{data.description}</p>
 								</motion.div>
 
 								{/* Skills Grid */}

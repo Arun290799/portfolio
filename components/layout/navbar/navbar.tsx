@@ -61,9 +61,9 @@ export function Navbar() {
 							whileTap={{ scale: 0.95 }}
 						>
 							<div className="w-8 h-8 rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
-								<span className="text-white font-bold text-sm">A</span>
+								<span className="text-on-primary font-bold text-sm">A</span>
 							</div>
-							<span className="text-lg font-semibold text-white group-hover:text-purple-400 transition-colors">
+							<span className="text-lg font-semibold text-primary group-hover:text-purple-400 transition-colors">
 								Arun Poloju
 							</span>
 						</motion.a>
@@ -80,7 +80,7 @@ export function Navbar() {
 											element.scrollIntoView({ behavior: "smooth" });
 										}
 									}}
-									className="relative text-sm font-medium text-white/70 hover:text-white transition-colors py-2"
+									className="relative text-sm font-medium text-secondary hover:text-primary transition-colors py-2"
 									initial={{ opacity: 0, y: -20 }}
 									animate={{ opacity: 1, y: 0 }}
 									transition={{ delay: index * 0.1 }}
@@ -164,7 +164,7 @@ export function Navbar() {
 												}
 												setIsMobileMenuOpen(false);
 											}}
-											className="text-lg font-medium text-white/80 hover:text-white transition-colors py-3 px-4 rounded-xl hover:bg-white/10 text-left"
+											className="text-lg font-medium text-secondary hover:text-primary transition-colors py-3 px-4 rounded-xl hover:bg-white/10 text-left"
 											variants={navItemVariants}
 											initial="initial"
 											animate="animate"
@@ -192,7 +192,7 @@ export function Navbar() {
 											}
 											setIsMobileMenuOpen(false);
 										}}
-										className="w-full py-4 text-center font-semibold text-white rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300"
+										className="w-full py-4 text-center font-semibold text-on-primary rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300"
 										whileHover={{ scale: 1.02 }}
 										whileTap={{ scale: 0.98 }}
 									>

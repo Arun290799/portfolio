@@ -37,14 +37,14 @@ const ExperienceCard = ({ exp, index }: { exp: any; index: number }) => {
 					<div className="mb-4">
 						<div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
 							<div>
-								<h3 className="text-xl font-semibold text-white mb-1">{exp.role}</h3>
+								<h3 className="text-xl font-semibold text-primary mb-1">{exp.role}</h3>
 								<motion.div
 									className="flex items-center gap-2 text-purple-400"
 									initial={{ opacity: 0 }}
 									whileInView={{ opacity: 1 }}
 									transition={{ delay: index * 0.1 + 0.3 }}
 								>
-									<span className="text-white/60">at</span>
+									<span className="text-secondary">at</span>
 									<span className="font-medium">{exp.company}</span>
 								</motion.div>
 							</div>
@@ -70,7 +70,7 @@ const ExperienceCard = ({ exp, index }: { exp: any; index: number }) => {
 						{exp.impact.map((item: string, i: number) => (
 							<motion.li
 								key={i}
-								className="flex items-start gap-3 text-white/70"
+								className="flex items-start gap-3 text-secondary"
 								initial={{ opacity: 0, x: -20 }}
 								whileInView={{ opacity: 1, x: 0 }}
 								transition={{ delay: index * 0.1 + 0.5 + i * 0.1 }}
@@ -96,7 +96,7 @@ const ExperienceCard = ({ exp, index }: { exp: any; index: number }) => {
 						{exp.tech.map((tech: string) => (
 							<motion.span
 								key={tech}
-								className="px-3 py-1.5 text-xs rounded-full bg-white/10 border border-white/20 text-white/80 hover:bg-white/20 transition-all duration-50"
+								className="px-3 py-1.5 text-xs rounded-full bg-white/10 border border-white/20 text-secondary hover:bg-white/20 transition-all duration-50"
 								whileHover={{
 									scale: 1.05,
 									backgroundColor: "rgba(139, 92, 246, 0.2)",
@@ -123,10 +123,10 @@ export function Experience() {
 				<StaggerContainer>
 					{/* Section Header */}
 					<motion.div className="text-center mb-20" variants={modernVariants.fadeInUp}>
-						<motion.h2 className="text-4xl md:text-6xl font-bold mb-6 text-white">
+						<motion.h2 className="text-4xl md:text-6xl font-display font-bold mb-6 text-primary">
 							Professional Journey
 						</motion.h2>
-						<motion.p className="text-lg text-white/60 max-w-3xl mx-auto">
+						<motion.p className="text-lg text-secondary max-w-3xl mx-auto">
 							Building and scaling real-world systems with focus on performance, reliability, and user
 							impact. Every role contributed to growth and innovation.
 						</motion.p>

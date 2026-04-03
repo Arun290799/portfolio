@@ -45,7 +45,7 @@ export function ContactForm() {
 					onChange={handleInputChange}
 					required
 					placeholder="Your Name"
-					className="w-full px-6 py-4 bg-white/5 backdrop-blur-sm border border-white/20 rounded-2xl text-white placeholder-white/40 outline-none focus:border-purple-500/50 focus:bg-white/10 transition-all duration-300 text-base"
+					className="w-full px-6 py-4 bg-white/5 backdrop-blur-sm border border-white/20 rounded-2xl text-primary placeholder-text-secondary outline-none focus:border-purple-500/50 focus:bg-white/10 transition-all duration-300 text-base"
 				/>
 				<motion.div
 					className="absolute left-6 top-1/2 text-xs text-purple-400 opacity-0"
@@ -66,7 +66,7 @@ export function ContactForm() {
 					onChange={handleInputChange}
 					required
 					placeholder="Your Email"
-					className="w-full px-6 py-4 bg-white/5 backdrop-blur-sm border border-white/20 rounded-2xl text-white placeholder-white/40 outline-none focus:border-purple-500/50 focus:bg-white/10 transition-all duration-300 text-base"
+					className="w-full px-6 py-4 bg-white/5 backdrop-blur-sm border border-white/20 rounded-2xl text-primary placeholder-text-secondary outline-none focus:border-purple-500/50 focus:bg-white/10 transition-all duration-300 text-base"
 				/>
 				<motion.div
 					className="absolute left-6 top-1/2 text-xs text-purple-400 opacity-0"
@@ -87,7 +87,7 @@ export function ContactForm() {
 					required
 					placeholder="Your Message"
 					rows={5}
-					className="w-full px-6 py-4 bg-white/5 backdrop-blur-sm border border-white/20 rounded-2xl text-white placeholder-white/40 outline-none focus:border-purple-500/50 focus:bg-white/10 transition-all duration-300 text-base resize-none"
+					className="w-full px-6 py-4 bg-white/5 backdrop-blur-sm border border-white/20 rounded-2xl text-primary placeholder-text-secondary outline-none focus:border-purple-500/50 focus:bg-white/10 transition-all duration-300 text-base resize-none"
 				/>
 				<motion.div
 					className="absolute left-6 top-1/2 text-xs text-purple-400 opacity-0"
@@ -104,7 +104,7 @@ export function ContactForm() {
 				<motion.button
 					type="submit"
 					disabled={loading}
-					className="w-full relative px-8 py-4 font-semibold text-white rounded-2xl overflow-hidden transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+					className="w-full relative px-8 py-4 font-semibold text-on-primary rounded-2xl overflow-hidden transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
 					style={{
 						background: loading ? "linear-gradient(135deg, #666, #888)" : gradients.primary,
 						boxShadow: loading ? "none" : "0 10px 30px rgba(139, 92, 246, 0.3)",

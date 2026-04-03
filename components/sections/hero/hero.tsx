@@ -51,12 +51,12 @@ export function Hero() {
 				<div className="text-center max-w-5xl relative z-10">
 					{/* Main heading */}
 					<motion.h1
-						className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6"
+						className="text-5xl md:text-7xl lg:text-8xl font-display font-bold mb-6"
 						initial={{ opacity: 0, y: 30 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: 0.4 }}
 					>
-						<span className="text-xl md:text-xl lg:text-xl font-medium inline-block text-white/80 mb-3">
+						<span className="text-xl md:text-2xl lg:text-3xl font-sans font-medium inline-block text-secondary mb-3">
 							Hello! I'm
 						</span>
 						<br />
@@ -67,7 +67,7 @@ export function Hero() {
 
 					{/* Subtitle with typing animation */}
 					<motion.div
-						className="text-xl md:text-2xl text-white/70 mb-12 h-8"
+						className="text-xl md:text-2xl text-secondary mb-12 h-8"
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: 0.6 }}
@@ -100,7 +100,7 @@ export function Hero() {
 						<motion.a
 							href="https://drive.google.com/file/d/1_kPir47oZXc4fLpJYieljVPk7rP8ah5O/view?usp=drive_link"
 							target="_blank"
-							className="group relative px-10 py-5 text-lg font-semibold text-white rounded-xl overflow-hidden transition-all duration-50"
+							className="group relative px-10 py-5 text-lg font-semibold text-on-primary rounded-xl overflow-hidden transition-all duration-50"
 							style={{
 								background: "linear-gradient(135deg, #7c3aed 0%, #6366f1 100%)",
 								boxShadow: "0 4px 15px rgba(124, 58, 237, 0.3)",
@@ -123,7 +123,7 @@ export function Hero() {
 									element.scrollIntoView({ behavior: "smooth" });
 								}
 							}}
-							className="px-10 py-5 text-lg font-semibold text-white rounded-xl border-2 border-white/20 bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-50"
+							className="px-10 py-5 text-lg font-semibold text-primary rounded-xl border-2 border-white/20 bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-50"
 							whileHover={{ y: -2, boxShadow: "0 15px 40px rgba(255, 255, 255, 0.2)" }}
 							whileTap={{ y: -2 }}
 						>
