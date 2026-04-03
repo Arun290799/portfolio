@@ -257,7 +257,7 @@ const SkillCard = ({ skill }: { skill: { name: string; icon: React.ReactNode } }
 
 export function Skills() {
 	return (
-		<section className="py-32 px-6 relative overflow-hidden">
+		<section id="skills" className="py-32 px-6 relative overflow-hidden">
 			<div className="mx-auto max-w-6xl relative z-10">
 				<StaggerContainer>
 					{/* Section Header */}
