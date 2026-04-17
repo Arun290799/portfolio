@@ -126,7 +126,6 @@ export function About() {
 											<span className="text-base">
 												Strong problem-solving and analytical skills
 											</span>
-											<span>Strong problem-solving and analytical skills</span>
 										</li>
 										<li className="flex items-start gap-3">
 											<div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0" />
