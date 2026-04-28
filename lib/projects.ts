@@ -30,4 +30,17 @@ export const projects = [
 			live: "https://ai-smart-shopping-list.vercel.app/",
 		},
 	},
+	{
+		id: "trendstack",
+		title: "TrendStack",
+		tagline: "Curated trending dev & AI tools platform",
+		description:
+			"TrendStack is a curated platform that showcases trending development and AI tools. It features categorized collections for AI-powered development tools and essential developer resources, with sections for trending today and trending this week. The platform provides an organized way to discover and explore the latest tools in the tech ecosystem.",
+		highlights: ["Curated tool collections", "AI & Dev categories", "Trending rankings", "Responsive navigation"],
+		techStack: ["Next.js", "TypeScript", "Tailwind"],
+		links: {
+			live: "https://trendstack-xi.vercel.app/",
+			github: "https://github.com/Arun290799/trendstack",
+		},
+	},
 ];
